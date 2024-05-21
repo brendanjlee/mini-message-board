@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 New Message
+  form(action="/new", method="POST")
+    p UserName: 
+      input(type="text" name="username")
+    p Message:
+      input(type="text" name="message")
+    input(type="submit", value="Submit")

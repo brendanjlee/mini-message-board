@@ -3,3 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  - var n = 0
+  each msg in messages
+    h3 Message #{n++}
+    each val, key in msg
+      p #{key}:#{val}
+
